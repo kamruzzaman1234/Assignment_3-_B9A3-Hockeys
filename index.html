@@ -18,11 +18,41 @@
 <style>
     .font-manrope{
         font-family: 'Manrope', sans-serif;
+         .bg1 {
+        background-image: linear-gradient(
+            180deg,
+            rgba(19, 19, 24, 0.8) 0%,
+            rgba(19, 19, 24, 0) 100%
+          ),
+          url("./Images/2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bg2 {
+        background-image: linear-gradient(
+            180deg,
+            rgba(19, 19, 24, 0.8) 0%,
+            rgba(19, 19, 24, 0) 100%
+          ),
+          url("./Images/3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bg3 {
+        background-image: linear-gradient(
+            180deg,
+            rgba(19, 19, 24, 0.8) 0%,
+            rgba(19, 19, 24, 0) 100%
+          ),
+          url("./Images/4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     }
 </style>
 </head>
 <body class="font-manrope">
-    <header class="container max-auto px-10">
+    <header class="container mx-auto sm:px-10 px-6">
         <!-- Navbar Area -->
         <nav>
             <div class="navbar bg-base-100">
@@ -60,47 +90,87 @@
         </nav>
         <!-- Banner Area -->
         <section class="my-5">
-            <!-- Slide One -->
+            
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full h-[550px]" />
-                  <div class="absolute flex
-                   justify-start transform bottom-7 ml-6 space-x-2">
-                    <a href="#slide3" class="btn btn-circle 
-                    border-none bg-black hover:bg-black text-white">❮</a> 
-                    <a href="#slide2" class="btn border-none
-                     btn-circle bg-black hover:bg-black text-white">❯</a>
-                  </div>
-                  
-                </div> 
-                <div id="slide2" class="carousel-item  relative w-full ">
-                  <img src="Images/2.png" class="w-full h-[550px]" />
-                  <div class="absolute flex justify-start transform bottom-7 ml-6 space-x-2">
-                    <a href="#slide1" class="btn btn-circle 
-                    border-none bg-black hover:bg-black text-white">❮</a> 
-                    <a href="#slide3" class="btn border-none
-                     btn-circle bg-black hover:bg-black text-white">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative  w-full">
-                  <img src="Images/3.png" class="w-full h-[550px]" />
-                  <div class="absolute flex items-center lg:justify-start   bottom-7 ml-6 space-x-2">
-                    <a href="#slide2" class="btn btn-circle
-                    border-none bg-black hover:bg-black text-white">❮</a> 
-                    <a href="#slide1" class="btn border-none
-                     btn-circle bg-black hover:bg-black text-white">❯</a>
-                  </div>
-                </div> 
+              <!-- Slide One -->
+              <div id="slide1" class="carousel-item relative w-full">
+                <img
+                  src="Images/1.png"
+                  class="w-full h-[450px] sm:h-[550px]"
+                />
+                <div
+                  class="absolute transform left-[50%] 
+                  -translate-x-1/2 sm:left-24 sm:-translate-x-1/2 bottom-7 
+                  space-x-2"
+                >
+                  <a
+                    href="#slide3"
+                    class="btn btn-circle border-none bg-black hover:bg-black text-white"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide2"
+                    class="btn border-none btn-circle bg-black hover:bg-black text-white"
+                    >❯</a
+                  >
+                </div>
+              </div>
+              <!-- Slide Two -->
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/2.png" class="h-[450px] sm:h-[550px] w-full" />
+                <div
+                  class="absolute transform 
+                  left-[50%] -translate-x-1/2 sm:left-24
+                   sm:-translate-x-1/2 bottom-7 space-x-2"
+                >
+                  <a
+                    href="#slide1"
+                    class="btn btn-circle
+                     border-none bg-black
+                      hover:bg-black text-white"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide3"
+                    class="btn border-none btn-circle bg-black hover:bg-black text-white"
+                    >❯</a
+                  >
+                </div>
+              </div>
+               <!-- Slide Three -->
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/3.png" class="h-[450px] sm:h-[550px] w-full" />
+                <div
+                  class="absolute transform left-[50%] -translate-x-1/2 sm:left-24 sm:-translate-x-1/2 bottom-7 space-x-2"
+                >
+                  <a
+                    href="#slide2"
+                    class="btn btn-circle border-none bg-black hover:bg-black text-white"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide1"
+                    class="btn border-none btn-circle bg-black hover:bg-black text-white"
+                    >❯</a
+                  >
+                </div>
+              </div>
              
               </div>
+              <!-- Extra Design -->
               <div class="flex cols-span-2 lg:justify-end mt-10 lg:-mt-44 mr-8">
-                    <div class="bg-black relative z-40 p-9  lg:p-6 text-white space-y-3 rounded-lg">
-                      <h3 class="font-extrabold text-2xl">
-                        Meet all the heroes from the field</h3>
-                      <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                      
-                    
-                    </div>
+                <div
+                  class="bg-black relative z-40 p-9 lg:p-6 text-white space-y-3 rounded-lg"
+                >
+                  <h3 class="font-extrabold text-2xl">
+                    Meet all the heroes from the field
+                  </h3>
+                  <p class="font-medium text-sm text-[#FFFFFF99]">
+                    Winchester Hockey Club is an all inclusive club run by members
+                    <br />
+                    and volunteers. Founded in March 1891 & during 2019 .
+                  </p>
+                </div>
               </div>
              
               <div>
@@ -108,7 +178,7 @@
               </div>
         </section>
     </header>
-    <main class="container max-auto px-10">
+    <main class="container mx-auto px-10">
         <!-- Professional Hockeys Club Area -->
         <section class="my-20">
                 <div class="text-center space-y-5">
@@ -116,7 +186,10 @@
                         Professional Hockeys Club
                     </h3>
                     <p class="text-xl font-medium">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. 
+                      Teddington is the oldest hockey club in the world and a large and
+                      thriving club based <br />
+                      in Teddington, Middlesex. We have over 700 senior.
+                      
                     </p>
                 </div>
                 <!-- Progress Area -->
@@ -125,27 +198,34 @@
                     <div class="radial-progress text-red-500" 
                     style="--value:87;" role="progressbar">87%</div>
                     <h3 class="text-xl font-semibold">Prayer Facility</h3>
-                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    <p>  Every Muslim is expected to pray five times a day and thus access
+                      to prayer facilities is of utmost importance to a Muslim traveller</p>
                  </div>
                  <div class="space-y-5 text-center">
                     <div class="radial-progress text-[#49D293]" 
                     style="--value:95;" role="progressbar">95%</div>
                     <h3 class="text-xl font-semibold">Experienced Coach</h3>
-                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    <p>If you describe someone as experienced, you mean that they have
+                      been doing a particular job or activity for a long time, and
+                      therefore know a lot about it.</p>
                  </div>
 
                  <div class="space-y-5 text-center">
                     <div class="radial-progress text-yellow-300" 
                     style="--value:90;" role="progressbar">90%</div>
                     <h3 class="text-xl font-semibold">Senior Player</h3>
-                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    <p> Senior Player means a player who has played International,
+                      provincial, or professional rugby in any jurisdiction in the
+                      current or last 3 preceding seasons.</p>
                  </div>
 
                  <div class="space-y-5 text-center">
                     <div class="radial-progress text-primary" 
                     style="--value:80;" role="progressbar">80%</div>
                     <h3 class="text-xl font-semibold">Training Ground</h3>
-                    <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    <p>Senior Player means a player who has played International,
+                      provincial, or professional rugby in any jurisdiction in the
+                      current or last 3 preceding seasons.</p>
                  </div>
                     
                 </div>
@@ -157,69 +237,69 @@
                     Program Sections
                 </h3>
                 <p class="text-xl font-medium">
-                    Dit amet consectetur. Condimentum dignissim
-                     adipiscing aliquam turpis placerat <br> dolor. 
-                     Purus urna in sit nullam proin.  
+                  Program sections, or psects, are simply a section of code or data. <br>
+                  They are a way of grouping together parts of a program (via the
+                  psect's name) even.  
                 </p>
             </div>
             <!-- Section Area -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
-                <div class=" rounded-xl"
-                 style="background-image:url(Images/2.png);
-                  background-repeat:no-repeat; background-size:cover;">
-                  
-                  <div class="space-y-4 pt-24 pb-8  ml-5 text-white">
-                     <h4 class="text-3xl font-extrabold">Junior Program</h4>
-                     <p>Dolor sit amet consectetur. Ut urna diam
-                       quis sagittis. Elit elit <br> 
-                      enim sagittis turpis in magna. Id et
-                       sed euismod natoque amet <br> nunc morbi nulla. 
-                       Tortor congue sed et in.</p>
-                      <button class="btn bg-[#FF4240]
-                       hover:bg-[#FF4240] text-xl border-none text-white
-                        font-bold px-7">
-                       Register Now!</button>
-                  </div>
+            <div class="grid grid-cols-1 text-gray-900 lg:grid-cols-2 gap-4 mt-10">
+              <!-- Section One -->
+              <div class="rounded-xl bg1">
+                <div class="space-y-4 pt-24 pb-8 ml-5 text-white">
+                  <h4 class="text-3xl font-extrabold">Junior Program</h4>
+                  <p>
+                    The Junior Professional Associate (JPA) program is a unique
+                    opportunity to gain entry-level professional experience and
+                    first-hand exposure to the challenges
+                  </p>
+                  <button
+                    class="btn bg-[#FF4240] hover:bg-[#FF4240] text-xl border-none text-white font-bold px-7"
+                  >
+                    Register Now!
+                  </button>
                 </div>
-                    <!-- Second Section -->
-                    <div class=" rounded-x"
-                 style="background-image:url(Images/3.png);
-                  background-repeat:no-repeat; background-size:cover;">
-                  
-                  <div class="space-y-4 pt-24  rounded-lg 
-                   w-full h-full  pb-8  pl-8 text-white">
-                     <h4 class="text-3xl font-extrabold relative z-20">Teenager Program</h4>
-                     <p>Dolor sit amet consectetur. Ut urna diam
-                       quis sagittis. Elit elit <br> 
-                      enim sagittis turpis in magna. Id et
-                       sed euismod natoque amet <br> nunc morbi nulla. 
-                       Tortor congue sed et in.</p>
-                      <button class="btn bg-[#FF4240]
-                       hover:bg-[#FF4240] text-xl border-none text-white
-                        font-bold px-7">
-                       Register Now!</button>
-                  </div>
+              </div>
+              <!-- Section two-->
+              <div class="rounded-x bg2">
+                <div
+                  class="space-y-4 pt-24 rounded-lg w-full h-full pb-8 pl-8 text-white"
+                >
+                  <h4 class="text-3xl font-extrabold relative z-20">
+                    Teenager Program
+                  </h4>
+                  <p>
+                    It's a unique experience for the local teens and the group from
+                    Haarlem to have a week long encounter together of Bible study,
+                    songs and some great sports
+                  </p>
+                  <button
+                    class="btn bg-[#FF4240] hover:bg-[#FF4240] text-xl border-none text-white font-bold px-7"
+                  >
+                    Register Now!
+                  </button>
                 </div>
-                    <!-- Third Section -->
-                    <div class="lg:col-span-2 rounded-xl"
-                    style="background-image:url(Images/4.png);
-                     background-repeat:no-repeat; background-size:cover;">
-                     
-                     <div class="space-y-4 pt-24 pb-8  ml-5 text-white">
-                        <h4 class="text-3xl font-extrabold">Professional Program</h4>
-                        <p>Dolor sit amet consectetur. Ut urna diam
-                          quis sagittis. Elit elit <br> 
-                         enim sagittis turpis in magna. Id et
-                          sed euismod natoque amet <br> nunc morbi nulla. 
-                          Tortor congue sed et in.</p>
-                         <button class="btn bg-[#FF4240]
-                          hover:bg-[#FF4240] text-xl border-none text-white
-                           font-bold px-7">
-                          Register Now!</button>
-                     </div>
-                   </div>
-                    
-            </div>
+              </div>
+              <!-- Section Three-->
+              <div class="lg:col-span-2 rounded-xl bg3">
+                <div class="space-y-4 pt-24 pb-8 ml-5 text-white">
+                  <h4 class="text-3xl font-extrabold">Professional Program</h4>
+                  <p>
+                    Professional program means a program that provides information,
+                    such as trends in an industry or discipline, which would benefit
+                    the administration or operation of the State or thePublic
+                    Official's applicable governmental entity, and would enable a
+                    Public Official to perform his or her duties more effectively.
+                  </p>
+                  <button
+                    class="btn bg-[#FF4240] hover:bg-[#FF4240] text-xl border-none text-white font-bold px-7"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>    
+
         </section>
         <!-- New Products Area -->
         <section class="my-20">
@@ -228,14 +308,12 @@
                 Our New Products
             </h3>
             <p class="text-xl font-medium">
-                Dit amet consectetur. Condimentum dignissim
-                 adipiscing aliquam turpis placerat <br> dolor. 
-                 Purus urna in sit nullam proin.  
+              The purpose of a product description is to inform potential customers about <br>the product, persuade them to make a purchase,  and enhance their overall shopping experience. 
             </p>
         </div>
         <!-- Products Area -->
         <div class="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-5">
-          <!-- First Card -->
+          <!-- First Product -->
           <div class="border-2 border-gray-300 p-5 rounded-lg">
               <div class="flex gap-9">
                   <img src="Images/5.png" alt="">
@@ -255,7 +333,9 @@
                           </div>
                       </div>
                       <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
-                      <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                      <p class="py-1"> The FIFA flag is blue, with the organization's wordmark logo
+                        in the middle. The current FIFA flag was first flown during
+                        the 2018 FIF</p>
                       <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
                             <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
                             <div class="flex items-center space-x-2 lg:space-x-4">
@@ -287,7 +367,11 @@
                         </div>
                     </div>
                     <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
-                    <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                    <p class="py-1">The FIFA flag is blue, 
+                      with the organization's wordmark logo
+                      in the middle. The current FIFA flag 
+                      was first flown during
+                      the 2018 FIF </p>
                     <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
                       <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
                       <div class="flex items-center space-x-2 lg:space-x-4">
@@ -319,7 +403,10 @@
                       </div>
                   </div>
                   <h3 class="font-extrabold text-xl">Cap For Hockeys</h3>
-                  <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                  <p class="py-1">What are caps in hockey? 
+                    Today, to be capped is an expression
+                    used as a measure of how many times someone has played for a
+                    particular team.</p>
                   <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
                     <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
                     <div class="flex items-center space-x-2 lg:space-x-4">
@@ -350,7 +437,11 @@
                     </div>
                 </div>
                 <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
-                <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                <p class="py-1">
+                  The FIFA flag is blue, with the organization's wordmark logo
+                  in the middle. The current FIFA flag was first flown during
+                  the 2018 FIF
+                </p>
                 <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
                   <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
                   <div class="flex items-center space-x-2 lg:space-x-4">
@@ -381,7 +472,11 @@
                   </div>
               </div>
               <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
-              <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+              <p class="py-1">
+                The FIFA flag is blue, with the organization's wordmark logo
+                  in the middle. The current FIFA flag was first flown during
+                  the 2018 FIF
+              </p>
               <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
                 <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
                 <div class="flex items-center space-x-2 lg:space-x-4">
@@ -412,7 +507,11 @@
                 </div>
             </div>
             <h3 class="font-extrabold text-xl">World Cup Flags Football</h3>
-            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <p class="py-1">
+              The FIFA flag is blue, with the organization's wordmark logo
+              in the middle. The current FIFA flag was first flown during
+              the 2018 FIF
+            </p>
             <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-8">
               <p class="text-[#FF4240] font-extrabold">Price - $22.00</p>
               <div class="flex space-x-2  lg:space-x-4">
@@ -427,84 +526,87 @@
         </section>
         <!-- Client Question Area -->
         <section class="my-20">
-          <div class="text-center space-y-5">
-            <h3 class="text-4xl font-extrabold">
-                Our New Products
-            </h3>
-            <p class="text-xl font-medium">
-                Dit amet consectetur. Condimentum dignissim
-                 adipiscing aliquam turpis placerat <br> dolor. 
-                 Purus urna in sit nullam proin.  
+          <div class="text-center text-gray-950 space-y-5">
+            <h3 class="text-4xl font-extrabold">Clients Question</h3>
+            <p class="text-base font-medium">
+              A client onboarding questionnaire is a survey sent to <br> new customers
+              to get more information about their needs and goals.
             </p>
-        </div>
-        <!-- Ask Question Area -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-16 border-2 border-gray-200 p-5">
-            <div class=" w-full">
-              <img src="Images/11.png" alt="" class="w-full h-[510px]">
+          </div>
+          <!-- Ask Question Area -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 text-gray-950 gap-5 mt-16 border-2 border-gray-200 p-5"
+          >
+            <div class="w-full">
+              <img src="Images/11.png" alt="" class="w-full h-[510px]" />
             </div>
             <div class="space-y-4 lg:space-y-3">
               <div class="collapse border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" checked="checked" /> 
-                <div class="collapse-title text-xl font-bold">
-                  Our Equipment
-                </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                     sagittis turpis in magna.</p>
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-bold">Our Equipment</div>
+                <div class="collapse-content">
+                  <p>
+                    Equipment most commonly refers to a set of tools or other
+                    objects commonly used to achieve a particular objective.
+                  </p>
                 </div>
               </div>
               <div class="collapse collapse-plus border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" /> 
+                <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-bold">
                   Hockey Training
                 </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                    sagittis turpis in magna.</p>
+                <div class="collapse-content">
+                  <p>
+                    Unstructured hockey play on outdoor rinks, streets, parking
+                    lots is a great way to build a passion for the game.
+                  </p>
                 </div>
               </div>
               <div class="collapse collapse-plus border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" /> 
+                <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-xl font-bold">
                   Private Lessons
                 </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                    sagittis turpis in magna.</p>
+                <div class="collapse-content">
+                  <p>
+                    Unstructured hockey play on outdoor rinks, streets, parking
+                    lots is a great way to build a passion for the game.
+                  </p>
                 </div>
               </div>
               <div class="collapse collapse-plus border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold">
-                  Ski Touring
-                </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                    sagittis turpis in magna.</p>
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-bold">Ski Touring</div>
+                <div class="collapse-content">
+                  <p>
+                    Unstructured hockey play on outdoor rinks, streets, parking
+                    lots is a great way to build a passion for the game.
+                  </p>
                 </div>
               </div>
               <div class="collapse collapse-plus border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold">
-                  Booking
-                </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                    sagittis turpis in magna.</p>
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-bold">Booking</div>
+                <div class="collapse-content">
+                  <p>
+                    Unstructured hockey play on outdoor rinks, streets, parking
+                    lots is a great way to build a passion for the game.
+                  </p>
                 </div>
               </div>
-              <div class="collapse collapse-plus  border-b-2 border-gray-300">
-                <input type="radio" name="my-accordion-3" /> 
-                <div class="collapse-title text-xl font-bold">
-                  Pricings
-                </div>
-                <div class="collapse-content"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
-                    sagittis turpis in magna.</p>
+              <div class="collapse collapse-plus border-b-2 border-gray-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-bold">Pricings</div>
+                <div class="collapse-content">
+                  <p>
+                    Unstructured hockey play on outdoor rinks, streets, parking
+                    lots is a great way to build a passion for the game.
+                  </p>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </section>
         <!-- Get in Touch Area -->
         <section class="my-20">
@@ -614,65 +716,68 @@
         
     </main>
     <!-- Footer Area Style -->
-    <footer class="container max-auto text-white px-10 bg-black py-10">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            <div class="space-y-4 ">
-                  <h3 class="text-[28px] font-extrabold">Get In Touch</h3>
-                  <p class="text-[16px] text-[#FFFFFF99]">Dit amet consectetur. Condimentum <br>
-                   adipiscing aliquam turpis
-                   placerat dolor. Purus
-                   urna in sit nullam proin. </p>
-                   <div class="">
-                      <div class="flex space-x-3 items-center text-[#FFFFFF99]">
-                        <i class="fa-solid fa-envelope text-[#FF4240]"></i>
-                        <p class="font-medium text-[16px]">hockeys@support.com</p>
-                      </div>
-                      <div class="flex space-x-3 items-center text-[#FFFFFF99]">
-                        <i class="fa-solid fa-phone text-[#FF4240]"></i>
-                        <p class="font-medium text-[16px]">(+62) 123-321-543</p>
-                      </div>
-                   </div>
+    <footer class="container mx-auto text-white px-10 bg-black py-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="space-y-4 text-center sm:text-start col-span-2 sm:col-span-1"
+        >
+          <h3 class="text-[28px] font-extrabold">Get In Touch</h3>
+          <p class="text-[16px] text-[#FFFFFF99]">
+            If you are, keep, or stay in touch with them, you write, phone, or
+            visit each other regularly. I will get in touch with solicitors
+            about this.
+          </p>
+          <div class="">
+            <div
+              class="flex justify-center space-x-3 items-center sm:justify-start text-[#FFFFFF99]"
+            >
+              <i class="fa-solid fa-envelope text-[#FF4240]"></i>
+              <p class="font-medium text-[16px]">hockeys@support.com</p>
             </div>
-      
-                  <div class="space-y-4">
-                  <h3 class="text-[18px] font-bold">Company</h3>
-                  <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
-                    <li>About us</li>
-                    <li>Leadership</li>
-                    <li> Careers</li>
-                    <li>News & Article</li>
-                    <li>Legal Notice</li>
-                  </ul> 
-                </div>
+            <div
+              class="flex space-x-3 justify-center sm:justify-start items-center text-[#FFFFFF99]"
+            >
+              <i class="fa-solid fa-phone text-[#FF4240]"></i>
+              <p class="font-medium text-[16px]">(+62) 123-321-543</p>
+            </div>
+          </div>
+        </div>
 
-                <div class="space-y-4">
-                  <h3 class="text-[18px] font-bold">Support</h3>
-                  <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
-                    <li>Help Center</li>
-                    <li>FAQ</li>
-                    <li> Ticket Support</li>
-                    <li>Contact Us</li>
-                    
-                  </ul> 
-                </div>
-                
+        <div class="space-y-4 text-center sm:text-start">
+          <h3 class="text-[18px] font-bold">Company</h3>
+          <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
+            <li>About us</li>
+            <li>Leadership</li>
+            <li>Careers</li>
+            <li>News & Article</li>
+            <li>Legal Notice</li>
+          </ul>
+        </div>
 
-                <div class="space-y-4">
-                  <h3 class="text-[18px] font-bold">Service</h3>
-                  <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
-                    <li>Academy</li>
-                    <li>Group Lesson</li>
-                    <li> Careers</li>
-                    <li>Privet Lesson</li>
-                    <li>Hockeys for kids</li>
-                    <li>Hockeys for kids</li>
-                  </ul> 
-                </div>
-              
-          
-          
+        <div class="space-y-4 text-center sm:text-start">
+          <h3 class="text-[18px] font-bold">Support</h3>
+          <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
+            <li>Help Center</li>
+            <li>FAQ</li>
+            <li>Ticket Support</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div
+          class="space-y-4 text-center col-span-2 sm:col-span-1 sm:text-start"
+        >
+          <h3 class="text-[18px] font-bold">Service</h3>
+          <ul class="space-y-4 text-[16px] pt-3 text-[#FFFFFF99]">
+            <li>Academy</li>
+            <li>Group Lesson</li>
+            <li>Careers</li>
+            <li>Privet Lesson</li>
+            <li>Hockeys for kids</li>
+            <li>Hockeys for kids</li>
+          </ul>
+        </div>
       </div>
-       
     </footer>
 </body>
 </html>
